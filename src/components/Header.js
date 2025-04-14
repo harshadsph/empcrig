@@ -1,9 +1,12 @@
 // pages/about.js
+import Navigation from "./Navbar"
+
 export default function Header() {
-    return (
+  return (
+    <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div>
-          <img src="/Empcrig-logo.png" alt="Logo" class="block mx-auto w-20 h-20" />
+        <Navigation />
       </div>
-    );
-  }
-  
+    </header>
+  );
+}

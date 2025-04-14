@@ -4,12 +4,46 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'playfair display', montserrat;
+}
+
+p,h,a{
+  font-family: 'montserrat' !important;
+}
+
+.text-5xl{
+  font-size: 4rem;
+}
+
+.text-3xl{
+  font-size: 2rem;
+}
 
 .hero-background {
-  background-image: url('/images/bg.png');
+  background-image: url('/images/bg2.png');
   background-size: cover;
   background-position: center;
 }
+
+.services-background {
+  background-image: url('/images/services_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.design-background {
+  background-image: url('/images/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutus-background {
+  background-image: url('/images/services_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
 
 
   
