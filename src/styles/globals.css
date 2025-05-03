@@ -6,6 +6,10 @@
 
 body {
   font-family: 'playfair display', montserrat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 p,h,a{
@@ -27,19 +31,19 @@ p,h,a{
 }
 
 .services-background {
-  background-image: url('/images/services_bg.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.design-background {
   background-image: url('/images/bg2.png');
   background-size: cover;
   background-position: center;
 }
 
-.aboutus-background {
+.design-background {
   background-image: url('/images/services_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutus-background {
+  background-image: url('/images/bg2.png');
   background-size: cover;
   background-position: center;
 }

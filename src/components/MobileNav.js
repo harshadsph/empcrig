@@ -20,7 +20,7 @@ const MobileNav = ({ isOpen, close, logoSrc }) => {
                         {/* Left Navigation */}
                         <ul className="flex flex-col">
                             <li className='p-5'>
-                                <Link href="/home" className="text-5xl">Work</Link>
+                                <Link href="/designs" className="text-5xl">Work</Link>
                             </li>
                             <li className='p-5'>
                                 <Link href="/about" className="text-5xl">About</Link>

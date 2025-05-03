@@ -8,9 +8,9 @@ const Services = ({ title, subtitle, image }) => {
 
         <div className="services-background bg-transparent w-full h-screen">
             {/* // Services text Section */}
-            <div className="p-5">
-                <div className="text-center p-4"><h1 className="text-8xl text-hexgrey font-bold">{title} </h1></div>
-                <div className="text-center p-2"><h2 className="text-2xl text-hexgrey">"{subtitle}"</h2></div>
+            <div className="p-5 text-hexgrey">
+                <div className="text-center p-4"><h1 className="text-8xl font-bold">{title} </h1></div>
+                <div className="text-center p-2"><h2 className="text-2xl">"{subtitle}"</h2></div>
             </div>
 
             {/* // Services Video Section */}

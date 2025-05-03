@@ -35,8 +35,11 @@ export default function Navbar() {
 
                 {/* Links on the right */}
                 <div className="space-x-4">
-                    <Link href="/our_services" className="hover:text-hexblue text-hexgrey text-xl px-4 py-2 rounded transform hover:scale-105 transition duration-300">
+                    <Link href="/services" className="hover:text-hexblue text-hexgrey text-xl px-4 py-2 rounded transform hover:scale-105 transition duration-300">
                         Discover Our World
+                    </Link>
+                    <Link href="/designs" className="hover:text-hexblue text-hexgrey text-xl px-4 py-2 rounded transform hover:scale-105 transition duration-300">
+                        Designs
                     </Link>
                     <Link href="/about" className="hover:text-hexblue text-hexgrey text-xl px-4 py-2 rounded transform hover:scale-105 transition duration-300">
                         Let's Colloborate
