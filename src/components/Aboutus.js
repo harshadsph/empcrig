@@ -42,9 +42,9 @@ const Aboutus = ({ title, subtitle, image }) => {
                     <Image
                         src={image || "/images/profile.png"}
                         alt="Founder"
-                        width={600}
-                        height={600}
-                        className="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px]"
+                        width={800}
+                        height={800}
+                        className="rounded-full object-cover w-full h-full"
                         priority
                     />
                 </div>

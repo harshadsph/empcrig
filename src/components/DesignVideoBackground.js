@@ -5,8 +5,8 @@ const DesignVideoBackground = ({ title, subtitle, image }) => {
   return (
     <section className="py-4 md:py-12 design-background bg-transparent w-full">
       <div className="mx-auto text-center">
-        <h2 className="text-4xl md:text-7xl font-bold mb-4">{title}</h2>
-        <p className="text-lg md:text-xl mb-12 font-medium">"{subtitle}"</p>
+        <h2 className="text-4xl md:text-7xl font-bold mb-4 text-hexgrey">{title}</h2>
+        <p className="text-lg md:text-xl mb-12 font-medium text-hexgrey">"{subtitle}"</p>
         <div className="relative flex items-center justify-center w-full mb-0 bg-white overflow-hidden">
           <video
             autoPlay

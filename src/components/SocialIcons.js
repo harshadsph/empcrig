@@ -1,21 +1,23 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaInstagram, FaLinkedinIn, FaEnvelope, FaFacebook } from 'react-icons/fa';
 
 const SocialIcons = () => {
   return (
-    <div className="flex space-x-4">
-      <a href="https://www.facebook.com/yourpage" className="hover:text-blue-600">
-        <FontAwesomeIcon icon={faFacebook} size="3x" style={{ color: '#1877F2' }} />
-      </a>
-      <a href="https://twitter.com/yourhandle" className="hover:text-blue-400">
-        <FontAwesomeIcon icon={faTwitter} size="3x" style={{ color: '#1DA1F2' }}/>
-      </a>
-      <a href="https://www.instagram.com/yourhandle" className="hover:text-pink-600">
-        <FontAwesomeIcon icon={faInstagram} size="3x" style={{ color: '#E4405F' }} />
-      </a>
-      <a href="https://www.linkedin.com/in/yourprofile" className="hover:text-blue-800">
-        <FontAwesomeIcon icon={faLinkedin} size="3x" style={{ color: '#0A66C2' }} />
-      </a>
+    <div>
+      <h3 className="text-3xl font-semibold mb-3 text-hexgrey">Let’s Connect</h3>
+      <div className="flex space-x-6 mt-4">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="text-5xl text-blue-500 hover:text-hexblue transition-colors duration-300" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-5xl text-pink-500 hover:text-hexblue transition-colors duration-300" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn className="text-5xl text-blue-600 hover:text-hexblue transition-colors duration-300" />
+        </a>
+        <a href="mailto:hello@empcrig.com">
+          <FaEnvelope className="text-5xl text-yellow-500 hover:text-hexblue transition-colors duration-300" />
+        </a>
+      </div>
     </div>
   );
 };

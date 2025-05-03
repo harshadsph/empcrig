@@ -52,7 +52,7 @@ export default function Home() {
         <Aboutus
           title="Design That Empower."
           subtitle="Stories That Ignite"
-          image="/profile.png"
+          image="/images/profile.png"
         />
 
          {/* Aboutus Section*/}

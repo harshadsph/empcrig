@@ -16,14 +16,6 @@ p,h,a{
   font-family: 'montserrat' !important;
 }
 
-.text-5xl{
-  font-size: 4rem;
-}
-
-.text-3xl{
-  font-size: 2rem;
-}
-
 .hero-background {
   background-image: url('/images/bg2.png');
   background-size: cover;

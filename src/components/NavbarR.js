@@ -1,17 +1,25 @@
 // components/NavbarR.js
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import Hamburger from './Hamburger';
-import MobileNav from './MobileNav';
+import MobileNav from './MobileNavR';
 import Logo from '../../public/images/empcrig-logo.png';
+
 
 export default function NavbarR() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsOpen(false);
+      router.back(); // ← Browser-style back
+    } else {
+      setIsOpen(true);
+    }
   };
 
   return (
@@ -20,7 +28,9 @@ export default function NavbarR() {
         
         {/* Hamburger - visible only on mobile */}
         <div>
-          <Hamburger isOpen={isOpen} toggle={toggleMenu} />
+        <Link href="/navigation">
+          <Hamburger isOpen={isOpen} toggle={toggleMenu}/>
+        </Link>
         </div>
 
         {/* Logo - always centered */}
@@ -39,10 +49,7 @@ export default function NavbarR() {
         {/* Desktop Links - hidden on mobile */}
         <div className="hidden lg:flex space-x-6 ml-auto">
           <Link href="/services" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
-            Discover Our World
-          </Link>
-          <Link href="/designs" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
-            Designs
+            Portfolio
           </Link>
           <Link href="/about" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
             Let's Collaborate
