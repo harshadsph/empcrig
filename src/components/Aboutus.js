@@ -2,7 +2,6 @@
 import Image from 'next/image';
 
 const Aboutus = ({ title, subtitle, image }) => {
-
     return (
 
         <div className="p-20 aboutus-background bg-transparent w-full">
