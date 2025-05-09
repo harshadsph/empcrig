@@ -1,12 +1,12 @@
 // pages/index.js
-import DesignVideoBackground from '../components/DesignVideoBackground';
+import Aboutus from '../components/Aboutus';
 export default function About() {
   return (
     <div className="pt-16">
-     <DesignVideoBackground
-          title="Design process at Empcrig"
-          subtitle="From concept to creation, explore the steps that transform your vision into reality."
-          image="/hero-image.jpg"
+     <Aboutus
+          title="Design That Empower."
+          subtitle="Stories That Ignite"
+          image="/images/profile.png"
         />
     </div>
   );

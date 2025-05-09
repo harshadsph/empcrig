@@ -12,7 +12,7 @@ const MobileNav = ({logoSrc }) => {
           {/* Left Navigation */}
           <ul className="space-y-6">
             <li>
-              <Link href="/designs" className="text-4xl lg:text-8xl text-bold text-hexgrey hover:text-hexblue">Work</Link>
+              <Link href="/" className="text-4xl lg:text-8xl text-bold text-hexgrey hover:text-hexblue">Home</Link>
             </li>
             <li>
               <Link href="/about" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">About</Link>
@@ -20,15 +20,15 @@ const MobileNav = ({logoSrc }) => {
             <li>
               <Link href="/services" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">Services</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/blog" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">Blog</Link>
-            </li>
+            </li> */}
           </ul>
 
           {/* Right Navigation */}
           <ul className="space-y-6">
             <li>
-              <Link href="/contact" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">Contact Us</Link>
+              <Link href="/contactus" className="text-4xl text-hexgrey hover:text-hexblue">Contact Us</Link>
             </li>
             <li>
               <div>
@@ -36,9 +36,9 @@ const MobileNav = ({logoSrc }) => {
                 <p className="text-xl mt-1 text-hexgrey">nehal@empcrig.com</p>
               </div>
             </li>
-            <li>
-              <Link href="/signup" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">Get Started</Link>
-            </li>
+            {/* <li>
+              <Link href="/signup" className="text-4xl text-hexgrey hover:text-hexblue">Get Started</Link>
+            </li> */}
             <li>
               <div className="pt-2">
                 <SocialIcons />

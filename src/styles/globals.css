@@ -39,7 +39,9 @@ p,h,a{
   background-size: cover;
   background-position: center;
 }
+.contactus-background {
+  background-image: url('/images/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
 
-
-
-  

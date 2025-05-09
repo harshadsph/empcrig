@@ -7,6 +7,7 @@ import DesignVideoBackground from '../components/DesignVideoBackground';
 import Aboutus from '../components/Aboutus';
 import WhyEmpcrig from '../components/whyempcrig';
 import ServicesR from '../components/ServicesR';
+import Contactus from '../components/Contactus';
 
 export default function Home() {
   return (
@@ -60,6 +61,13 @@ export default function Home() {
           title="Design That Empower."
           subtitle="Stories That Ignite"
           image="/profile.png"
+        />
+
+        {/* Contactus Section*/}
+        <Contactus
+          title="Contact Us"
+          subtitle="Let's connect & Create Something Amazing."
+          heading="Tell us about your vision, and we'll help bring it to life—boldly, beautifully, and with purpose."
         />
       </main>
 

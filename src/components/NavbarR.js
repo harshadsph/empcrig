@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Hamburger from './Hamburger';
 import MobileNav from './MobileNavR';
 import Logo from '../../public/images/empcrig-logo.png';
+import SocialIcons from './SocialIcons';
 
 
 export default function NavbarR() {
@@ -48,12 +49,13 @@ export default function NavbarR() {
 
         {/* Desktop Links - hidden on mobile */}
         <div className="hidden lg:flex space-x-6 ml-auto">
-          <Link href="/services" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
-            Portfolio
+          <SocialIcons />
+          {/* <Link href="/services" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
+            Services
           </Link>
-          <Link href="/about" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
+          {/* <Link href="/about" className="hover:text-hexblue text-hexgrey text-lg px-3 py-2 transition duration-300">
             Let's Collaborate
-          </Link>
+          </Link> */} 
         </div>
       </div>
 
