@@ -8,6 +8,7 @@ import Aboutus from '../components/Aboutus';
 import WhyEmpcrig from '../components/whyempcrig';
 import ServicesR from '../components/ServicesR';
 import Contactus from '../components/Contactus';
+import ScrollNavigator from '../components/ScrollNavigator';
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
         /> */}
 
         <ServicesR
-          title="Our Expertise, Your Vision"
+          title="Your Vision, Our Expertise"
           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
           image="/hero-image.jpg"
         />
@@ -69,6 +70,8 @@ export default function Home() {
           subtitle="Let's connect & Create Something Amazing."
           heading="Tell us about your vision, and we'll help bring it to life—boldly, beautifully, and with purpose."
         />
+
+      <ScrollNavigator />
       </main>
 
     </>

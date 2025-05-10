@@ -3,17 +3,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SocialIcons from './SocialIcons';
 const ContactPage  = ({ title, subtitle, heading }) => {
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Handle form submission logic here
-        console.log('Form submitted!');
-        // You can access form values using:
+    
         const name = event.target.elements.name.value;
         const email = event.target.elements.email.value;
         const company = event.target.elements.company.value;
         const message = event.target.elements.message.value;
-
-        console.log({ name, email, company, message });
+    
+        const res = await fetch('https://o3dt2ke82f.execute-api.ap-southeast-1.amazonaws.com/Prod', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, company, message })
+        });
+    
+        const data = await res.json();
+    
+        if (data.success) {
+            alert('Message sent successfully!');
+        } else {
+            alert('Failed to send message.');
+        }
     };
 
 
@@ -60,24 +70,24 @@ const ContactPage  = ({ title, subtitle, heading }) => {
                                     type="text"
                                     placeholder="Name"
                                     name="name"
-                                    className="w-full px-4 py-2 bg-black/20 text-white border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-2 bg-black/20 text-hexgrey border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 <input
                                     type="email"
                                     placeholder="Email"
                                     name="email"
-                                    className="w-full px-4 py-2 bg-black/20 text-white border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-2 bg-black/20 text-hexgrey border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 <input
                                     type="text"
                                     placeholder="Company Name"
                                     name="company"
-                                    className="w-full px-4 py-2 bg-black/20 text-white border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-2 bg-black/20 text-hexgrey border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                                 <textarea
                                     placeholder="Message"
                                     name="message"
-                                    className="w-full px-4 py-2 bg-black/20 text-white border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[120px]"
+                                    className="w-full px-4 py-2 bg-black/20 text-hexgrey border border-gray-300 rounded-md placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[120px]"
                                 />
                                 <button
                                     type="submit"
