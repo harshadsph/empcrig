@@ -1,6 +1,6 @@
 // pages/index.js
-import Portfolio from '../components/Portfolio';
-export default function Designs() {
+import Portfolio from '../components/PortfolioGallery';
+export default function PortfolioR() {
   return (
     <div className="pt-16">
       <Portfolio

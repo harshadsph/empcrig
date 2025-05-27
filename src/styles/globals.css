@@ -22,6 +22,12 @@ p,h,a{
   background-position: center;
 }
 
+.portfolio-background {
+  background-image: url('/images/services_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .services-background {
   background-image: url('/images/bg2.png');
   background-size: cover;

@@ -8,13 +8,13 @@ const SocialIcons = () => {
         <a href="https://www.facebook.com/profile.php?id=100078057437475" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="text-3xl text-blue-500 hover:text-hexblue transition-colors duration-300" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/empcrig/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-pink-500 hover:text-hexblue transition-colors duration-300" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/company/empcrig/" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn className="text-3xl text-blue-600 hover:text-hexblue transition-colors duration-300" />
         </a>
-        <a href="mailto:hello@empcrig.com">
+        <a href="mailto:nehal@empcrig.com">
           <FaEnvelope className="text-3xl text-yellow-500 hover:text-hexblue transition-colors duration-300" />
         </a>
       </div>

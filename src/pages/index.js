@@ -9,6 +9,7 @@ import WhyEmpcrig from '../components/whyempcrig';
 import ServicesR from '../components/ServicesR';
 import Contactus from '../components/Contactus';
 import ScrollNavigator from '../components/ScrollNavigator';
+import PortfolioGallery from '../components/PortfolioGallery';
 
 export default function Home() {
   return (
@@ -29,6 +30,12 @@ export default function Home() {
           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
           image="/hero-image.jpg"
         /> */}
+
+        <PortfolioGallery 
+           title="Your Vision, Our Expertise"
+           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
+           image="/hero-image.jpg"
+        />
 
         <ServicesR
           title="Your Vision, Our Expertise"

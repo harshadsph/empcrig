@@ -15,6 +15,9 @@ const MobileNav = ({logoSrc }) => {
               <Link href="/" className="text-4xl lg:text-8xl text-bold text-hexgrey hover:text-hexblue">Home</Link>
             </li>
             <li>
+              <Link href="/portfolio" className="text-4xl lg:text-8xl text-bold text-hexgrey hover:text-hexblue">Portfolio</Link>
+            </li>
+            <li>
               <Link href="/about" className="text-4xl lg:text-8xl text-hexgrey hover:text-hexblue">About</Link>
             </li>
             <li>
