@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.806.0",
@@ -23,6 +24,7 @@
     "lucide-react": "^0.507.0",
     "next": "^15.2.3",
     "next-optimized-images": "^2.6.2",
+    "next-sitemap": "^4.2.3",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

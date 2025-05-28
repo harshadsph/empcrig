@@ -39,6 +39,12 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
 
+         <title>Empcrig | Empower. Create. Ignite.</title>
+        <meta 
+          name="description" 
+          content="Empcrig is a creative design agency empowering brands with sustainable graphic design solutions. From branding to animation, we ignite ideas that make a meaningful impact." 
+        />
+
         {/* GA4 Font & Tag */}
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"

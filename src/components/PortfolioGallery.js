@@ -10,7 +10,7 @@ const projects = [
     },
     {
       title: "Illustration",
-      image: "/images/illustration.jpg",
+      image: "/images/illustration.png",
     },
     {
       title: "Animation & Motion Design",
