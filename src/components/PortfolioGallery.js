@@ -18,7 +18,7 @@ const projects = [
     },
     {
       title: "UX/UI Design",
-      image: "/images/uxui.jpg",
+      image: "/images/uiux.png",
     },
     {
       title: "Print Design",
