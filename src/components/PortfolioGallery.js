@@ -14,7 +14,7 @@ const projects = [
     },
     {
       title: "Animation & Motion Design",
-      image: "/images/animation.jpg",
+      image: "/images/animation.png",
     },
     {
       title: "UX/UI Design",

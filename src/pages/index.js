@@ -1,8 +1,5 @@
 // src/pages/index.js
-import Hero from '../components/Hero';
 import HeroVideoBackground from '../components/HeroVideoBackground';
-import Services from '../components/Services';
-import Design from '../components/Design';
 import DesignVideoBackground from '../components/DesignVideoBackground';
 import Aboutus from '../components/Aboutus';
 import WhyEmpcrig from '../components/whyempcrig';
@@ -15,26 +12,14 @@ export default function Home() {
   return (
     <>
       <main className="pt-11 overflow-x-auto">
-        {/* Hero Section*/}
-        {/* <Hero
-          title="Empower Your Brand With Impactful & Sustainable Designs"
-          subtitle="Where creativity meets strategy, and sustainability drives innovation."
-          image="/hero-image.jpg"
-        /> */}
+
 
         <HeroVideoBackground />
 
-        {/* Services Section*/}
-        {/* <Services
-          title="Our Expertise, Your Vision"
+        <PortfolioGallery
+          title="Your Vision, Our Expertise"
           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
           image="/hero-image.jpg"
-        /> */}
-
-        <PortfolioGallery 
-           title="Your Vision, Our Expertise"
-           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
-           image="/hero-image.jpg"
         />
 
         <ServicesR
@@ -42,15 +27,6 @@ export default function Home() {
           subtitle="Empcrig delivers innovative, sustainable design solutions that empower your brand."
           image="/hero-image.jpg"
         />
-
-        
-
-        {/* Design Section*/}
-        {/* <Design
-          title="Design process at Empcrig"
-          subtitle="From concept to creation, explore the steps that transform your vision into reality."
-          image="/hero-image.jpg"
-        /> */}
 
         <DesignVideoBackground
           title="Design process at Empcrig"
@@ -64,8 +40,8 @@ export default function Home() {
           image="/images/profile.png"
         />
 
-         {/* Aboutus Section*/}
-         <WhyEmpcrig
+        {/* Aboutus Section*/}
+        <WhyEmpcrig
           title="Design That Empower."
           subtitle="Stories That Ignite"
           image="/profile.png"
@@ -78,7 +54,7 @@ export default function Home() {
           heading="Tell us about your vision, and we'll help bring it to life—boldly, beautifully, and with purpose."
         />
 
-      <ScrollNavigator />
+        <ScrollNavigator />
       </main>
 
     </>
