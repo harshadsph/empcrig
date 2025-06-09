@@ -22,11 +22,11 @@ const projects = [
     },
     {
       title: "Print Design",
-      image: "/images/print.jpg",
+      image: "/images/print.png",
     },
     {
       title: "Video Editing",
-      image: "/images/video.jpg",
+      image: "/images/video.png",
     },
   ];
 
